@@ -246,7 +246,7 @@ button { font: inherit; color: inherit; }
 
 /* The Years */
 #years { gap: 48px; }
-.years { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 48px 40px; }
+.years { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 48px 40px; }
 .year-head {
   display: flex; justify-content: space-between; align-items: flex-end; gap: 12px;
   border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink); padding: 16px 0 14px;
@@ -276,8 +276,8 @@ button { font: inherit; color: inherit; }
 .filters button[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
 .count::before { content: "("; } .count::after { content: ")"; }
 
-.leads { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px 48px; }
-.stories { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 40px; }
+.leads { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 40px 48px; }
+.stories { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 40px; }
 .leads:empty, .stories:empty { display: none; }
 .story { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--ink); padding-top: 18px; }
 .story h3 { font-family: var(--f-head); font-weight: 900; font-size: 20px; line-height: 1.35; }
@@ -297,7 +297,7 @@ button { font: inherit; color: inherit; }
 .classifieds { flex: 3 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
 .section-head-start { display: flex; flex-direction: column; gap: 10px; }
 .section-head-start h2 { font-size: clamp(28px, 3.2vw, 40px); }
-.ads { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
+.ads { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(190px, 100%), 1fr)); gap: 16px; }
 .ad {
   border: 1px solid var(--ink); outline: 1px solid var(--ink); outline-offset: -6px;
   padding: 22px 20px 18px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center;
@@ -335,7 +335,7 @@ button { font: inherit; color: inherit; }
 .coupon-name { font-family: var(--f-head); font-weight: 900; font-size: 26px; line-height: 1.3; }
 :root[lang="ar"] .coupon-name { font-weight: 700; font-size: 30px; }
 .coupon-role { font-style: italic; font-size: 16px; line-height: 1.5; color: var(--ink-2); }
-.contact-grid { width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 20px 0; text-align: start; }
+.contact-grid { width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 12px; margin: 20px 0; text-align: start; }
 .contact-card { position: relative; display: flex; border: 1px solid var(--ink); }
 .contact-card.dark { background: var(--ink); color: var(--on-ink); }
 .contact-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; text-decoration: none; }
