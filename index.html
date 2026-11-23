@@ -27,7 +27,6 @@
     (function () {
       var d = document.documentElement, theme = null, lang = null;
       try { theme = localStorage.getItem('chronicle-theme'); lang = localStorage.getItem('chronicle-lang'); } catch (e) {}
-      if (!theme && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) theme = 'night';
       if (theme === 'night') d.setAttribute('data-theme', 'night');
       if (lang === 'ar') { d.lang = 'ar'; d.dir = 'rtl'; }
       d.classList.add('js');
